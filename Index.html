@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>r.e.m beauty</h1>
+        <a href="Index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="#footer">Contact</a>
+        <div class="hamburger" onclick="toggleResponsive()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="video-bg">
+            <video autoplay loop muted>
+                <source src="Download (1).mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="overlay">
+            <div class="content">
+                <h1>Welcome to r.e.m beauty</h1>
+                <p>Unleash your inner artistry with our innovative cosmetics</p>
+                <button>Explore Our Products</button>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="footer">
+        <div class="footer-content">
+            <h3 class="footer-heading">Contact Us</h3>
+            <p class="footer-text">123 Main Street, City, Country</p>
+            <p class="footer-text">Phone: +1 123-456-7890</p>
+            <p class="footer-text">Email: info@rembeauty.com</p>
+        </div>
+        <div class="footer-social">
+            <a href="#" class="footer-icon"><img src="facebook.png" alt="Facebook">Facebook</a>
+            <a href="#" class="footer-icon"><img src="twitter.png" alt="Twitter">Meta</a>
+            <a href="#" class="footer-icon"><img src="instagram.png" alt="Instagram">Insta</a>
+        </div>
+        <div>
+            <input type="search" placeholder="Leave a review">
+        </div>
+    </footer>
+
+    <script>
+        function toggleResponsive() {
+          var navbar = document.querySelector('.navbar');
+          navbar.classList.toggle('responsive');
+        }
+    </script>
+</body>
+</html>

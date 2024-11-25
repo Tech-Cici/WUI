@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>r.e.m beauty - Services</title>
+  <style>
+   
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    
+   
+
+    
+    .services {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 40px;
+      @media (max-width: 480px )and (orientation:portrait) and (min-width: 100px) {
+    display: block;
+         }
+    }
+
+    .service-card {
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .service-info {
+      padding: 20px;
+    }
+
+    .service-info h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .service-info p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .service-info button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .service-info button:hover {
+      background-color: black;
+    }
+
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    a{
+      color: #fff;
+      text-decoration: none;
+    }
+    .navbar{
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(128, 128, 128);
+    color: white;
+    font-style: italic;
+    display: flex;
+    padding: 1%;
+    font-family: Arial, sans-serif;
+  background-color: #333;
+  overflow: hidden;
+  @media (max-width: 480px )and (orientation:portrait) and (min-width: 100px) {
+    display: block;
+         }
+  }
+.navbar h1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  @media (max-width: 480px )and (orientation:portrait) and (min-width: 100px) {
+  margin-left: 20%;
+  padding: 2%;         }
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.navbar a{
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .navbar a {
+    display: none;
+  }
+
+  .hamburger , h1{
+    display: block;
+    float: left;
+    padding-left: 60px;
+    padding-top: 40px;
+  }
+
+
+  .navbar.responsive a {
+    display: flex;
+    width: 20%;
+
+  }
+
+  .navbar.responsive .hamburger {
+   display: none;
+  }
+  .navbar.responsive{
+    height: 60%;
+    display: block;
+  }
+}
+
+
+.navbar a {
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin: 0 10px;
+  text-decoration: none;
+  flex-direction: row;
+
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1>r.e.m beauty</h1>
+      <a href="Index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="#footer">Contact</a>
+      <div class="hamburger" onclick="toggleResponsive()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+  </div>
+  </header>
+
+  <div class="services">
+    <div class="service-card">
+      <img src="consultation.jpeg" alt="Service 1">
+      <div class="service-info">
+        <h3>Makeup Consultations</h3>
+        <p>Book a personalized consultation with our expert makeup artists to find the perfect products for your unique needs.</p>
+        <button>Learn More</button>
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="tutorial.jpeg" alt="Service 2">
+      <div class="service-info">
+        <h3>Virtual Tutorials</h3>
+        <p>Explore our library of step-by-step video tutorials to master the art of makeup application from the comfort of your home.</p>
+        <button>Learn More</button>
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="palette.jpg" alt="Service 3">
+      <div class="service-info">
+        <h3>Custom Palette Creation</h3>
+        <p>Design your own personalized eyeshadow or highlighter palette with our custom blending service.</p>
+        <button>Learn More</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 r.e.m beauty. All rights reserved.</p>
+    <a href="Home.html">Back to home</a>
+  </footer>
+  <script>
+    function toggleResponsive() {
+      var navbar = document.querySelector('.navbar');
+      navbar.classList.toggle('responsive');
+    }
+</script>
+</body>
+</html>
